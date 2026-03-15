@@ -12,16 +12,38 @@ body {
    display: grid;
    grid-template-columns: repeat(2,1fr);
    grid-gap: 15px;
-}
-
-.item{
-   background-color: #0f0;
-   padding: 20px;
-   border: 1px solid;
    font-size: 30px;
+   grid-template-areas: 
+   "header header"
+   "sidebar content"
+   "footer footer"
+   
+   
+   ;
+
 }
 
-.item-1{
-    grid-column: span 2;
-    grid-row: span 2;
+.header {
+   grid-area: header;
+    background-color: aqua;
+    border: 1px solid;
+    padding: 20px;
+}
+.sidebar {
+    background-color: rgb(8, 18, 200);
+    border: 1px solid;
+    padding: 20px;
+}
+
+.content {
+    background-color: rgb(179, 234, 37);
+    border: 1px solid;
+    padding: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+    border: 1px solid;
+    padding: 20px;
 }
