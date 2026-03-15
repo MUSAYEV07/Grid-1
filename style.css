@@ -8,11 +8,10 @@ body {
 .container{
    padding: 20px; 
    background-color: antiquewhite;
-   display: grid;
-   grid-template-columns: auto auto;
-   grid-column-gap: 30px;
-   grid-row-gap: 20px;
    text-align: center;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 15px;
 }
 
 .item{
@@ -23,28 +22,6 @@ body {
 }
 
 .item-1{
-    background-color: rgb(100, 219, 100);
+    grid-column: span 2;
+    grid-row: span 2;
 }
-
-.item-2{
-    background-color: rgb(9, 157, 103);
-}
-.item-3{
-    background-color: rgb(121, 197, 240);
-}
-.item-4{
-    background-color: rgb(29, 83, 208);
-}
-.item-5{
-    background-color: rgb(153, 45, 183);
-}
-.item-6{
-    background-color: rgb(161, 18, 25);
-}
-.item-7{
-    background-color: rgba(141, 121, 8, 0.501);
-}
-.item-8{
-    background-color: rgb(153, 169, 8);
-}
-
