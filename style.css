@@ -4,46 +4,55 @@ body {
     box-sizing: border-box;
 }
 
+.grid {
+  background-color: rgb(59, 196, 125);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 
-.container{
-   padding: 20px; 
-   background-color: antiquewhite;
-   text-align: center;
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   grid-gap: 15px;
-   font-size: 30px;
-   grid-template-areas: 
-   "header header"
-   "sidebar content"
-   "footer footer"
-   
-   
-   ;
 
+}
+
+.item {
+    background-color: #0f0;
+    padding: 30px;
+    text-align: center;
+    
 }
 
 .header {
-   grid-area: header;
-    background-color: aqua;
-    border: 1px solid;
+    grid-column: span 2;
     padding: 20px;
+    background-color: #0f0;
+    grid-template-areas: span 2;
+    font-size: 30px;
+    text-align: center;
+
 }
+
 .sidebar {
-    background-color: rgb(8, 18, 200);
-    border: 1px solid;
+    text-align: center;
+    grid-column: span 1;
+    background-color: red;
     padding: 20px;
+    color: #ffff;
+    font-size: 30px;
 }
 
 .content {
-    background-color: rgb(179, 234, 37);
-    border: 1px solid;
+    text-align: center;
+    grid-column: span 1;
     padding: 20px;
+    background-color: red;
+    color: #ffff;
+    font-size: 30px;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: aqua;
-    border: 1px solid;
+.footer {
+    background-color: blue;
     padding: 20px;
+    grid-column: span 2;
+    text-align: center;
+    font-size: 30px;
 }
